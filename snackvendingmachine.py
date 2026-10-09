@@ -13,7 +13,7 @@ while True:
   print("invalid coin, try again\n")
   continue
  total_inserted += coin
- coins_ += 1
+ coins_inserted+= 1
  print(f"Inserted {coin}. total so far:{total_inserted}\n")
  if total_inserted >= snack_price:
    print("enough money inserted!\n")
@@ -21,7 +21,15 @@ while True:
  change_due = calculate_change(total_inserted, snack_price)
  print("dispensing your snack...")
  if change_due == 0:
-  
+  pass
+ else:
+  print(f"here is your change : {change_due} units ")
+print("\n===== PURCHASE SUMMARY ===== ")
+print("snack price:", coins_inserted)
+print("total paid:",total_inserted)
+print("change given", change_due)
+print("===============================")
+print("thanks for your purchase")
   
   
  
